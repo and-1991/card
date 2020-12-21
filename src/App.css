@@ -1,0 +1,69 @@
+body {
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: #d9d9d9;
+}
+
+.card {
+  background-color: red;
+  padding: 10px;
+  border-radius: 10px;
+  width: 322px;
+  height: 210px;
+  box-shadow: 0 5px 5px 0 rgba(50, 50, 50, 0.75);
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.card__form {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: flex-end;
+}
+
+.flex {
+  width: 100%;
+  display: flex;
+}
+
+.flex-50 {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+
+input {
+  font-family: 'JetBrains Mono', monospace;
+  outline: none;
+  border: 1px solid black;
+  margin: 5px;
+  height: 20px;
+  max-width: 100%;
+}
+
+.block-error {
+  font-size: 10px;
+  margin: 0 5px;
+}
+
+:active, :hover, :focus {
+  outline: 0;
+  outline-offset: 0;
+}
